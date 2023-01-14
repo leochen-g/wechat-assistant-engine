@@ -181,6 +181,10 @@ hook包下载：[Dll文件和注入器](https://github.com/leochen-g/puppet-engi
 
 ### 关于如何发送H5链接和小程序
 
+需要配置使用协议为 windows-大恩才可发送
+
+![](http://image.xkboke.com/picgo/202301142009917.png)
+
 1、由于小程序需要特定参数，所以我们需要先把小程序发送给机器人解析出参数后，然后把
 参数填到微秘书平台的素材中；
 
