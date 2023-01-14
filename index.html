@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>智能微秘书-engine</title>
+    <link href="./web/index.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="wrap">
+    <div class="main-content">
+        <div class="left">
+            <h1 class="title">智能微秘书-Engine版</h1>
+            <div class="input">
+                <span class="label">APIKEY:</span><input id="apikey" type="text">
+            </div>
+            <div class="input">
+                <span class="label">APISecret:</span><input id="apisecret" type="text">
+            </div>
+            <div class="input">
+                <span class="label">hook端口(默认):</span><input id="hookport" type="text">
+            </div>
+            <div class="input">
+                <span class="label">server端口(默认):</span><input id="serverport" type="text">
+            </div>
+            <div class="action">
+                <button id="start" type="button">启动</button>
+                <button id="stop" type="button">停止</button>
+            </div>
+        </div>
+        <div class="right">
+            <div>
+                <span>日志路径：</span>
+                <div id="log-path"></div>
+            </div>
+            <div id="log-wrap"></div>
+        </div>
+    </div>
+</div>
+
+<script src="./web/renderer.js"></script>
+</body>
+</html>

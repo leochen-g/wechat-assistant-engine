@@ -1,0 +1,92 @@
+{
+  "name": "wechat-assistant",
+  "version": "1.0.0",
+  "description": "智能微秘书engine 1.0",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "author": "Leo_chen",
+  "license": "MIT",
+  "keywords": [
+    "wechaty1.x",
+    "wechaty",
+    "智能机器人",
+    "微信助手",
+    "chatgpt",
+    "微秘书",
+    "智能机器人",
+    "对话机器人",
+    "node",
+    "js"
+  ],
+  "engines": {
+    "node": ">=16",
+    "npm": ">=7"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.3",
+    "@electron-forge/maker-deb": "^6.0.3",
+    "@electron-forge/maker-squirrel": "^6.0.3",
+    "@electron-forge/maker-zip": "^6.0.3",
+    "@electron-forge/publisher-github": "^6.0.3",
+    "electron": "^21.3.1",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "wechaty": "^1.20.2",
+    "wechaty-puppet": "^1.21.1",
+    "wechaty-puppet-engine": "^1.0.4",
+    "wechaty-web-panel": "^1.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leochen-g/wechat-assistant-engine.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leochen-g/wechat-assistant-engine/issues"
+  },
+  "homepage": "https://github.com/leochen-g/wechat-assistant-engine#readme",
+  "config": {
+    "forge": {
+      "packagerConfig": {
+        "appVersion": "0.0.2",
+        "name": "WechatAssistantEngine",
+        "appCopyright": "Leo_chen",
+        "icon": "./assets/icons/favicon",
+        "win32metadata": {
+          "ProductName": "WechatAssistantEngine",
+          "CompanyName": "aibotk.com",
+          "FileDescription": "wechat assistant engine"
+        }
+      },
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "WechatAssistant"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
+  }
+}
