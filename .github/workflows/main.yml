@@ -44,7 +44,6 @@ jobs:
             with:
               draft: true
               files: |
-                out/**/*.dmg
                 out/**/*setup*.exe
                 out/**/*.nupkg
                 out/**/*.zip
