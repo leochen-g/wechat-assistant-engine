@@ -18,6 +18,8 @@
 本项目是基于[wechaty](https://github.com/wechaty/wechaty) 的个人开源智能机器人项目，更多关于`wechaty`项目说明及 api
 文档可以移步：[wechaty 介绍](https://wechaty.js.org/docs/howto/)
 
+此项目是基于electron开发的客户端，无需拉取源码，直接下载客户端安装包即可
+
 ## 更多功能说明
 
 - [x] 每日说,定时给女朋友发送每日天气提醒，以及每日一句
@@ -155,28 +157,29 @@ hook包下载：[Dll文件和注入器](https://github.com/leochen-g/puppet-engi
 
 ## 启动微秘书客户端
 
-1、下载微秘书客户端源码，不可用docker部署，只能源码部署
+1、下载微秘书客户端
 
-客户端源码地址：[链接](https://github.com/leochen-g/wechat-assistant-pro)
+客户端地址：[下载](https://github.com/leochen-g/wechat-assistant-engine/releases)
 
-![](http://image.xkboke.com/picgo/202301131813262.png)
+![](http://image.xkboke.com/picgo/202301141934379.png)
 
-2、源码下载后在代码根目录先安装依赖
+2、下载后双击运行
 
-```shell
-npm install
-```
+![](http://image.xkboke.com/picgo/202301141956404.png)
 
-![](http://image.xkboke.com/picgo/202301131817349.png)
+3、运行后对话日志回出现在右侧
 
-3、填写apikey和apisecret到`src/index.js`文件中
-
-![](http://image.xkboke.com/picgo/202301131821393.png)
-
-4、回到代码根目录执行`npm run start`即可
+![](http://image.xkboke.com/picgo/202301141958377.png)
 
 
-## 关于如何发送H5链接和小程序
+## 常见问题
+
+### 出现问题
+
+如果客户端报错，重启微秘书客户端即可，微信不需要重新登录，同时微信设置不要自动更新，如果自动更新了
+请重新安装
+
+### 关于如何发送H5链接和小程序
 
 1、由于小程序需要特定参数，所以我们需要先把小程序发送给机器人解析出参数后，然后把
 参数填到微秘书平台的素材中；
@@ -201,6 +204,7 @@ npm install
 ![](http://image.xkboke.com/picgo/202301131830363.png)
 
 ![](http://image.xkboke.com/picgo/202301131831629.png)
+
 
 ## 体验与交流
 
