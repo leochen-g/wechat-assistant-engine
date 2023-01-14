@@ -43,7 +43,7 @@ const createWindow = () => {
     })
     mainWindow.loadFile('index.html')
     // 打开开发工具
-    mainWindow.webContents.openDevTools()
+    // mainWindow.webContents.openDevTools()
 
     // Emitted when the window is closed.
     mainWindow.on('closed', function () {
@@ -85,4 +85,5 @@ function handleStartBot(event, key, secret, hookPort = 8089, serverPort = 8055) 
 
 function handleStopBot() {
     stopBot()
+    app.quit()
 }

@@ -1,6 +1,7 @@
 body, html {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -12,9 +13,6 @@ body {
 
 #log-wrap {
     width: 100%;
-    padding: 20px;
-    height: 300px;
-    overflow-y: scroll;
     white-space: pre-wrap;
 }
 
@@ -65,16 +63,11 @@ body {
     background-color: #04c404;
 }
 
-.wrap {
-
-}
-
 .main-content {
     text-align: left;
     width: 100%;
-    height: 450px;
+    height: 550px;
     margin: 0 auto;
-    padding: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,10 +76,14 @@ body {
     width: 50%;
     height: 100%;
     overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 10px;
+    position: relative;
 }
 .main-content .left {
     height: 100%;
     width: 40%;
+    padding-left: 10px;
 }
 .log-path {
     margin-bottom: 20px;
