@@ -13,14 +13,6 @@
 
 此项目直接使用的是Wechaty的面板插件，当然这个插件也是作者开发的，如果有兴趣研究源码，可以移步[插件源码](https://github.com/leochen-g/wechaty-web-panel) ，觉得有用记得点个star
 
-## 依赖
-
-指定wx版本：[WeChatSetup3.6.0.18.exe](https://github.com/leochen-g/puppet-engine/releases/download/lastest/WeChatSetup3.6.0.18.exe)
-
-hook包下载：[Dll文件和注入器](https://github.com/leochen-g/puppet-engine/releases/download/lastest/DaenWxHook.zip)
-
-[注册](http://wechat.aibotk.com/signup?from=assistat-engine)智能微秘书平台和账号
-
 ## 项目说明
 
 本项目是基于[wechaty](https://github.com/wechaty/wechaty) 的个人开源智能机器人项目，更多关于`wechaty`项目说明及 api
@@ -87,6 +79,14 @@ hook包下载：[Dll文件和注入器](https://github.com/leochen-g/puppet-engi
 
 ## 提前准备
 
+## 下载依赖
+
+指定wx版本：[WeChatSetup3.6.0.18.exe](https://github.com/leochen-g/puppet-engine/releases/download/lastest/WeChatSetup3.6.0.18.exe)
+
+hook包下载：[Dll文件和注入器](https://github.com/leochen-g/puppet-engine/releases/download/lastest/DaenWxHook.zip)
+
+下载微秘书客户端安装包最新版：[下载](https://github.com/leochen-g/wechat-assistant-engine/releases)
+
 ### 注册智能微秘书管理账号
 
 1. 注册：[智能微秘书](https://wechat.aibotk.com/#/signup)
@@ -95,7 +95,7 @@ hook包下载：[Dll文件和注入器](https://github.com/leochen-g/puppet-engi
 
 3. 个人中心获取`APIKEY`和`APISECRET`，后续配置用到
 
-![](./doc/img/user-center.png)
+![](http://image.xkboke.com/picgo/202301141720549.png)
 
 ### 注册天行数据账号
 
