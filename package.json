@@ -1,6 +1,6 @@
 {
   "name": "wechat-assistant",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "智能微秘书engine 1.0",
   "main": "main.js",
   "scripts": {
@@ -43,7 +43,7 @@
     "wechaty": "^1.20.2",
     "wechaty-puppet": "^1.21.1",
     "wechaty-puppet-engine": "^1.0.9",
-    "wechaty-web-panel": "^1.4.5"
+    "wechaty-web-panel": "^1.4.7"
   },
   "repository": {
     "type": "git",

@@ -31,7 +31,7 @@ jobs:
               node-version: 16.x
 
           - name: Install Dependencies
-            run: yarn config set ignore-engines true || yarn --network-timeout 100000 || yarn --network-timeout 100000 || yarn --network-timeout 100000
+            run: npm install
 
           - name: Build Electron App
             run: yarn make --arch=${{ matrix.arch }}
