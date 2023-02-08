@@ -28,10 +28,10 @@ jobs:
           - name: Install Node.js
             uses: actions/setup-node@v3.0.0
             with:
-              node-version: 18.x
+              node-version: 16.x
 
           - name: Install Dependencies
-            run: yarn --network-timeout 100000 || yarn --network-timeout 100000 || yarn --network-timeout 100000
+            run: yarn config set ignore-engines true || yarn --network-timeout 100000 || yarn --network-timeout 100000 || yarn --network-timeout 100000
 
           - name: Build Electron App
             run: yarn make --arch=${{ matrix.arch }}
