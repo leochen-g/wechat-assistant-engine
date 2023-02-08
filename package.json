@@ -1,6 +1,6 @@
 {
   "name": "wechat-assistant",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "智能微秘书engine 1.0",
   "main": "main.js",
   "scripts": {
@@ -31,8 +31,8 @@
   "devDependencies": {
     "@electron-forge/cli": "^6.0.3",
     "@electron-forge/maker-deb": "^6.0.3",
-    "@electron-forge/maker-squirrel": "^6.0.3",
     "@electron-forge/maker-rpm": "^6.0.3",
+    "@electron-forge/maker-squirrel": "^6.0.3",
     "@electron-forge/maker-zip": "^6.0.3",
     "@electron-forge/publisher-github": "^6.0.3",
     "electron": "^21.3.1",
@@ -43,7 +43,7 @@
     "wechaty": "^1.20.2",
     "wechaty-puppet": "^1.21.1",
     "wechaty-puppet-engine": "^1.0.9",
-    "wechaty-web-panel": "^1.4.3"
+    "wechaty-web-panel": "^1.4.5"
   },
   "repository": {
     "type": "git",
